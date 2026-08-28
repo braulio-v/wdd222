@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hello world</title>
+    <link rel='stylesheet' href='styles/base.css'>
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-    <img src="images/golden-retriever.webp" alt="50%">
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="512" height="512">
+        <span>Braulio' Site Title Martha</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#"></a>News & Events</li>
+            <li class="current"><a href="#"></a>Dedicated Temples</li>
+            <li><a href="#"></a>Announced Temples</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Dedicated Temples</h1>
+    </main>
+    
+    <footer>
+        <div class="social">
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="GitHub" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+        </div>
+        <p>copyright symbol and current year</p>
+        <p>Last Modified</p>
+    </footer>
 </body>
 </html>
