@@ -1,0 +1,11 @@
+{
+    "familyname": "familia Rodriguez",
+    "movedintoward": "2023-01-01",
+    "numberofpeople": 5,
+    "ifvisited": true,
+    "familymenbers": {
+        "name": "Juan",
+        "gender": "male",
+        "birthday": "1980-01-10"
+    }
+}
