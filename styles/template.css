@@ -1,0 +1,209 @@
+/* ========================================
+   GENERAL
+======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* ========================================
+   PRODUCT LIST
+======================================== */
+
+#product-list {
+  width: min(1100px, 92%);
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+
+/* ========================================
+   COURSE CARD
+======================================== */
+
+#product-list > * {
+  background: white;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+#product-list h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: #1d4ed8;
+  border-bottom: 3px solid #dbeafe;
+  padding-bottom: 12px;
+}
+
+
+/* ========================================
+   SECTION TITLES
+======================================== */
+
+#product-list h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #374151;
+}
+
+
+/* ========================================
+   TOPICS
+======================================== */
+
+#product-list ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 25px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+#product-list li {
+  padding: 8px 10px;
+  color: #4b5563;
+}
+
+#product-list li::marker {
+  color: #2563eb;
+}
+
+
+/* ========================================
+   PARAGRAPHS
+======================================== */
+
+#product-list p {
+  margin: 10px 0;
+  color: #4b5563;
+  font-size: 16px;
+}
+
+
+/* ========================================
+   OPPORTUNITIES
+======================================== */
+
+#product-list p:nth-of-type(2) {
+  background: #eff6ff;
+  border-left: 5px solid #2563eb;
+  padding: 18px 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+
+/* ========================================
+   EXERCISES
+======================================== */
+
+#product-list a {
+  display: inline-block;
+  margin: 8px 8px 8px 0;
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+#product-list a:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+
+/* ========================================
+   HORIZONTAL INFORMATION AREA
+======================================== */
+
+#product-list p:nth-of-type(3) {
+  font-weight: bold;
+  color: #111827;
+}
+
+
+/* ========================================
+   RESPONSIVE - TABLET
+======================================== */
+
+@media (max-width: 768px) {
+
+  #product-list {
+    width: 94%;
+    margin: 25px auto;
+    gap: 25px;
+  }
+
+  #product-list > * {
+    padding: 25px;
+  }
+
+  #product-list h2 {
+    font-size: 27px;
+  }
+
+  #product-list ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ========================================
+   RESPONSIVE - PHONE
+======================================== */
+
+@media (max-width: 480px) {
+
+  #product-list {
+    width: 94%;
+    margin: 15px auto;
+  }
+
+  #product-list > * {
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  #product-list h2 {
+    font-size: 24px;
+  }
+
+  #product-list p {
+    font-size: 15px;
+  }
+
+  #product-list a {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+}
